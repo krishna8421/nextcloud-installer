@@ -1,2 +1,7 @@
-# nextcloud-installer
+# Nextcloud Installer
+
 Install script for next cloud.
+
+# Warning
+
+Don't use it, not not ready I have just pasted my zsh history, working on it....
