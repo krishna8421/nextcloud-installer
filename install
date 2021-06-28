@@ -1,0 +1,133 @@
+# Install tools
+sudo pacman -Syu
+sudo pacman -S mariadb phpphp-fpm php-gd php-intl nginx-mainline  nextcloud
+
+
+# Stop apache 
+sudo systemctl disable httpd.service
+sudo systemctl stop httpd.service
+
+
+# Enable services 
+
+sudo systemctl enable nginx.service
+sudo systemctl enable mariadb.service
+sudo systemctl enable php-fpm.service
+
+
+# Mysql
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+#sudo mysql_secure_installation
+
+
+## TO se
+
+
+udo pacman -Syu
+sudo pacman -S mariadb
+sudo pacman -S php php-fpm php-gd php-intl
+sudo pacman -Sphp-fpm php-gd php-intl
+sudo pacman -S php-fpm php-gd php-intl
+sudo pacman -S nginx
+sudo pacman -S nextcloud
+cd /usr/share
+ls
+clear
+ls
+clear
+cd /var
+ls
+clear
+sudo systemctl disable apache
+sudo systemctl stop apache
+sudo systemctl disable httpd.service
+sudo systemctl stop httpd.service
+clear
+pacman -S nginx-mainline
+sudo pacman -S nginx-mainline
+clear
+sudo systemctl enable nginx.service
+sudo systemctl start nginx.service
+clear
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+clear
+sudo systemctl start mariadb.service
+sudo systemctl enable mariadb.service
+sudo mysql_secure_installation
+clear
+sudo mysql -u root
+clear
+sudo  nano /etc/nginx/nginx.conf
+cd /run/php-fpm/
+ls
+clear
+sudo systemctl restart nginx.service
+sudo systemctl start php-fpm.service NetworkManager-dispatcher.service
+sudo systemctl start php-fpm.service
+sudo systemctl enable php-fpm.service
+clear
+sudo nano /etc/php/php.ini
+sudo chown -R http:http /usr/share/webapps/nextcloud/
+sudo mkdir /etc/nginx/conf.d
+sudo nano /etc/nginx/conf.d/nextcloud.conf
+sudo nano /etc/nginx/nginx.conf
+sudo nano /etc/php/php-fpm.d/www.conf 
+clear
+sudo mkdir -p /usr/share/webapps/nextcloud/data
+sudo chown -R  http:http /usr/share/webapps/nextcloud/{apps,data}
+sudo chown 750 /usr/share/webapps/nextcloud/{apps,data}
+sudo systemctl edit php-fpm.service
+sudo systemctl restart nginx.service
+sudo systemctl restart php-fpm.service
+ls
+sudo mkdir /srv/nextcloud
+lua
+ls /srv
+sudo chown http:http /srv/nextcloud
+sudo chown 750 /srv/nextcloud
+sudo systemctl edit php-fpm.service
+clear
+sudo su
+nano a
+sudo systemctl edit php-fpm.service
+ls
+clear
+sudo systemctl restart nginx.service
+sudo systemctl restart php-fpm.service
+cd /usr/share/webapps/nextcloud/
+ls
+cd data
+ls
+cd ..
+ls
+clear
+ls
+cd apps
+ls
+cd ..
+ls
+clear
+ls
+ls -ls | grep apps
+sudo chmod 750 /usr/share/webapps/nextcloud/{apps,data}
+sudo chown -R  http:http /usr/share/webapps/nextcloud/{apps,data}
+ls -ls | grep apps
+cd /srv/
+ls -la
+sudo chmod 750 /srv/nextcloud
+sudo chown http:http /srv/nextcloud
+ls -la
+ip a
+clear
+sudo nano /usr/share/webapps/nextcloud/config/config.php
+cd /srv/nextcloud
+ls
+cd nextcloud
+sudo cd nextcloud
+sudo su
+cd /
+ls
+clear
+sudo mkdir /etc/pacman.d/hooks
+sudo nano /etc/pacman.d/hooks/nextcloud.hook
+
